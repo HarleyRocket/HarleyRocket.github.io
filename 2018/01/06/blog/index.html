@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="博客">
 <meta property="og:description" content="使用hexo+github搭建博格，搜集资料">
 <meta property="og:locale" content="中文">
-<meta property="og:updated_time" content="2018-01-06T14:27:43.987Z">
+<meta property="og:updated_time" content="2018-01-07T08:37:42.855Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo+github搭建免费个人博客">
 <meta name="twitter:description" content="使用hexo+github搭建博格，搜集资料">
@@ -176,7 +176,7 @@
 <p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：将刚复制的内容粘贴到key那里，title随便填，保存。</p>
 <h3 id="3-测试是否配置成功"><a href="#3-测试是否配置成功" class="headerlink" title="3. 测试是否配置成功"></a>3. 测试是否配置成功</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com <span class="comment"># 注意邮箱地址不用改</span></span><br></pre></td></tr></table></figure>
 <p>如果提示Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：</p>
-<pre><code>Hi liuxianan! You&apos;ve successfully authenticated, but GitHub does not provide shell access.
+<pre><code>Hi xxx! You&apos;ve successfully authenticated, but GitHub does not provide shell access.
 看到这个信息说明SSH已配置成功！
 </code></pre><p>此时你还需要配置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"username"</span>// 你的github用户名，非昵称</span><br><span class="line">$ git config --global user.email  <span class="string">"mail@163.com"</span>// 填写你的github注册邮箱</span><br></pre></td></tr></table></figure></p>
 <h3 id="4-使用hexo"><a href="#4-使用hexo" class="headerlink" title="4. 使用hexo"></a>4. 使用hexo</h3><p>Hexo是一个简单、快速、强大的基于 Github Pages 的博客发布工具，支持Markdown格式，有众多优秀插件和主题。</p>
@@ -447,6 +447,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ssh</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
